@@ -2,8 +2,100 @@
 <html>
 <head>
 	<title>Visual Compass Web Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<link rel="stylesheet" href="bower_components/gumby/css/gumby.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-	
+<script>
+	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+	if(!oldieCheck) {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+	} else {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+	}
+	</script>
+	<script>
+	if(!window.jQuery) {
+	if(!oldieCheck) {
+	  document.write('<script src="bower_components/gumby/js/libs/jquery-2.0.2.min.js"><\/script>');
+	} else {
+	  document.write('<script src="bower_components/gumby/js/libs/jquery-1.10.1.min.js"><\/script>');
+	}
+	}
+	</script>
+
+	<!--
+	Include gumby.js followed by UI modules followed by gumby.init.js
+	Or concatenate and minify into a single file -->
+	<script gumby-touch="bower_components/gumby/js/libs" src="js/libs/gumby.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.toggleswitch.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.checkbox.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.radiobtn.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.tabs.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/gumby.navbar.js"></script>
+	<script src="bower_components/gumby/js/libs/ui/jquery.validation.js"></script>
+	<script src="bower_components/gumby/js/libs/gumby.init.js"></script>
+	<script src="bower_components/gumby/js/plugins.js"></script>
+	<script src="bower_components/gumby/js/main.js"></script>
+<div id="page_wrap">
+	<div id="head_wrap">
+	<header>
+		<div class="row">
+			<div id="logo" class="two columns">
+				<img src="img/logo.png">
+			</div>
+			<div class="ten columns">
+				<nav>
+					<ul class="four_up tiles">
+						<li><a href="">design</a></li>
+						<li><a href="">development</a></li>
+						<li><a href="">video</a></li>
+						<li><a href="">marketing</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div id="intro" class="row">
+			<div class="centered six columns">
+				<h1>Charting Your Digital Success</h1>
+				<p>Agile, client-focused solutions, for all of your online needs.</p>
+				<i class="icon-down-circled"></i>
+			</div>
+		</div>
+	</header>
+	</div>
+	<main>
+		<div id="development" class="row">
+			<div class="centered six columns">
+				<h2>development</h2>
+				<p>Visual Compass uses a client-focused process to create your website or application the way you want it. We build sites that allow you to control your own content. Sites that look great. Sites that work.</p>
+			</div>
+		</div>
+		<div id="design" class="row">
+			<div class="centered six columns">
+				<h2>design</h2>
+				<p>Your identity is important. Attract potential customers with your custom web design, logo, or brochure. Quality design is essential to establishing an identity that people will remember. Let Visual Compass help you create a design that represents your identity. </p>
+			</div>
+		</div>
+		<div id="video" class="row">
+			<div class="centered six columns">
+				<h2>video</h2>
+				<p>From multimedia content creation to business branding, VC Web offers a full suite of creative services including HD Videography, Photography and Podcasting. Do not miss those special moments that your clients will want to experience.</p>
+			</div>
+		</div>
+		<div id="marketing" class="row">
+			<div class="centered six columns">
+				<h2>marketing</h2>
+				<p>VC Web believes that marketing begins and ends with measurable results. Increase traffic to your site with SEO and social media. We will help you speak directly to your target market and turn traffic into increased sales.</p>
+			</div>
+		</div>
+	</main>
+	<footer></footer>
+</div>
 </body>
 </html>

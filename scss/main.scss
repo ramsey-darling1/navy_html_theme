@@ -1,0 +1,51 @@
+/**
+ *Main styles for Vcweb redesign
+ *@rdarling
+ *
+ */
+
+
+$trans-black: rgba(0,0,0,0.8);
+$trans-white: rgba(255,255,255,0.8);
+$white: #f4f4f4;
+$blue: #1D276E;
+
+.left {float:left;}
+.right {float:right;}
+.brick {clear:both;}
+.centered {text-align:center;}
+.absolute {position:absolute;}
+.relative {position:relative;}
+.fixed {position: fixed;}
+
+#head_wrap {
+	background:url(../img/ship.jpg) no-repeat fixed;
+	background-size:cover;
+}
+
+header {
+	color: $white;
+	background-color: $trans-black;
+	padding:2rem;
+
+	h1{
+		color: $white;
+		padding:1rem;
+	}
+}
+
+main {
+
+	h2 {
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+
+	.row {
+		padding: 5rem;
+	}
+
+	#design {
+		
+	}
+}
