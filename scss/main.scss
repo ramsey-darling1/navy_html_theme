@@ -6,7 +6,7 @@
 
 
 $trans-black: rgba(0,0,0,0.8);
-$trans-white: rgba(255,255,255,0.8);
+$trans-white: rgba(255,255,255,0.5);
 $white: #f4f4f4;
 $blue: #1D276E;
 
@@ -42,10 +42,53 @@ main {
 	}
 
 	.row {
-		padding: 5rem;
+		padding: 8rem;
 	}
 
 	#design {
-		
+		background:url(../img/design.jpg) no-repeat fixed;
+		background-size:cover;
+
+		.row {
+			background: $trans-white;
+			color: $white;
+
+			h2 {
+				color: $white;
+			}
+		}
+	}
+
+	#video {
+		background:url(../img/giphy.gif) no-repeat fixed;
+		background-size:cover;
+
+		.row {
+			background: $trans-black;
+			color: $white;
+		}
+
+		h2 {
+			color: $white;
+		}
+	}
+
+	#marketing {
+		background: $blue;
+		color: $white;
+
+		h2{
+			color: $white;
+		}
+	}
+}
+
+#footer_info {
+	background:url(../img/ship.jpg) no-repeat fixed;
+	background-size:cover;	
+
+	.row{
+		color: $white;
+		padding:2rem;
 	}
 }

@@ -40,4 +40,32 @@ main h2 {
   text-transform: uppercase;
   margin-bottom: 2rem; }
 main .row {
-  padding: 5rem; }
+  padding: 8rem; }
+main #design {
+  background: url(../img/design.jpg) no-repeat fixed;
+  background-size: cover; }
+  main #design .row {
+    background: rgba(255, 255, 255, 0.5);
+    color: #f4f4f4; }
+    main #design .row h2 {
+      color: #f4f4f4; }
+main #video {
+  background: url(../img/giphy.gif) no-repeat fixed;
+  background-size: cover; }
+  main #video .row {
+    background: rgba(0, 0, 0, 0.8);
+    color: #f4f4f4; }
+  main #video h2 {
+    color: #f4f4f4; }
+main #marketing {
+  background: #1D276E;
+  color: #f4f4f4; }
+  main #marketing h2 {
+    color: #f4f4f4; }
+
+#footer_info {
+  background: url(../img/ship.jpg) no-repeat fixed;
+  background-size: cover; }
+  #footer_info .row {
+    color: #f4f4f4;
+    padding: 2rem; }
