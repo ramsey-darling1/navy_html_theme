@@ -24,9 +24,46 @@
 .fixed {
   position: fixed; }
 
+.tbg {
+  background: rgba(255, 255, 255, 0.5); }
+
+.disappear {
+  display: none; }
+
+.no-width {
+  width: 0; }
+
+.clear {
+  opacity: 0; }
+
+.init-content, .extra-right, .extra-left {
+  position: relative;
+  transition: all 0.5s ease; }
+  .init-content .icon-right-circled, .init-content .icon-left-circled, .extra-right .icon-right-circled, .extra-right .icon-left-circled, .extra-left .icon-right-circled, .extra-left .icon-left-circled {
+    position: absolute;
+    font-size: 3rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+    cursor: pointer; }
+  .init-content .icon-left-circled, .extra-right .icon-left-circled, .extra-left .icon-left-circled {
+    left: 0; }
+  .init-content .icon-right-circled, .extra-right .icon-right-circled, .extra-left .icon-right-circled {
+    right: 0; }
+  .init-content:hover .icon-right-circled, .init-content:hover .icon-left-circled, .extra-right:hover .icon-right-circled, .extra-right:hover .icon-left-circled, .extra-left:hover .icon-right-circled, .extra-left:hover .icon-left-circled {
+    opacity: 1; }
+
+.clear.absolute {
+  position: absolute !important; }
+
 #head_wrap {
   background: url(../img/ship.jpg) no-repeat fixed;
   background-size: cover; }
+
+#nav_wrap {
+  width: 100%;
+  min-width: 100%; }
+  #nav_wrap a {
+    color: #1D276E; }
 
 header {
   color: #f4f4f4;

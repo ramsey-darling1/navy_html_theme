@@ -17,10 +17,54 @@ $blue: #1D276E;
 .absolute {position:absolute;}
 .relative {position:relative;}
 .fixed {position: fixed;}
+.tbg {background:$trans-white;}
+.disappear {display:none;}
+.no-width {width:0;}
+.clear {opacity: 0;}
+
+
+.init-content,.extra-right, .extra-left {
+	position: relative;
+	transition: all 0.5s ease;
+	.icon-right-circled, .icon-left-circled {
+		position: absolute;
+		font-size: 3rem;
+		opacity: 0;
+		transition: all 0.5s ease;
+		cursor: pointer;
+	}
+
+	.icon-left-circled {
+		left:0;
+	}
+
+	.icon-right-circled {
+		right:0;
+	}
+
+	&:hover {
+		.icon-right-circled, .icon-left-circled {
+			opacity: 1;
+		}
+	}
+}
+
+.clear.absolute {
+	position: absolute !important;
+}
 
 #head_wrap {
 	background:url(../img/ship.jpg) no-repeat fixed;
 	background-size:cover;
+}
+
+#nav_wrap {
+	width: 100%;
+	min-width:100%;
+
+	a {
+		color: $blue;
+	}
 }
 
 header {

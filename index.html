@@ -29,7 +29,7 @@
 	<!--
 	Include gumby.js followed by UI modules followed by gumby.init.js
 	Or concatenate and minify into a single file -->
-	<script gumby-touch="bower_components/gumby/js/libs" src="js/libs/gumby.js"></script>
+	<script gumby-touch="bower_components/gumby/js/libs" src="bower_components/gumby/js/libs/gumby.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.retina.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.fixed.js"></script>
 	<script src="bower_components/gumby/js/libs/ui/gumby.skiplink.js"></script>
@@ -42,22 +42,25 @@
 	<script src="bower_components/gumby/js/libs/gumby.init.js"></script>
 	<script src="bower_components/gumby/js/plugins.js"></script>
 	<script src="bower_components/gumby/js/main.js"></script>
+	<script src="js/vc.js"></script>
 <div id="page_wrap">
 	<div id="head_wrap">
-	<header>
-		<div class="row">
-			<div id="logo" class="two columns">
-				<img src="img/logo.png">
-			</div>
-			<div class="ten columns">
+	<div class="row" gumby-fixed="top" id="nav_wrap">
+			<div class="centered twelve columns">
 				<nav>
 					<ul class="four_up tiles">
-						<li><a href="">design</a></li>
-						<li><a href="">development</a></li>
-						<li><a href="">video</a></li>
-						<li><a href="">marketing</a></li>
+						<li><a href="#development">development</a></li>
+						<li><a href="#design">design</a></li>
+						<li><a href="#marketing">marketing</a></li>
+						<li><a href="#video">video</a></li>
 					</ul>
 				</nav>
+			</div>
+		</div>
+	<header>		
+		<div class="row">
+			<div id="logo" class="centered four columns">
+				<img src="img/logo.png">
 			</div>
 		</div>
 		<div id="intro" class="row">
@@ -71,9 +74,29 @@
 	</div>
 	<main>
 		<div id="development" class="row">
-			<div class="centered six columns">
+			<div class="centered six columns init-content">
 				<h2>development</h2>
 				<p>Visual Compass uses a client-focused process to create your website or application the way you want it. We build sites that allow you to control your own content. Sites that look great. Sites that work.</p>
+				<div class="content-controls">
+					<i class="icon-right-circled"></i>
+					<i class="icon-left-circled"></i>
+				</div>
+			</div>
+			<div class="centered six columns extra-right clear absolute no-width">
+				<h2>development</h2>
+				<h3>technologies</h3>
+				<p>We utilize the latest and greatest in open-source web technologies.</p>
+				<div class="content-controls">
+					<i class="icon-left-circled"></i>
+				</div>
+			</div>
+			<div class="centered six columns extra-left clear absolute no-width">
+				<h2>development</h2>
+				<h3>capabilities</h3>
+				<p>web apps, phone apps, content sites, e-commerce, custom startups or legacy projects, we can do it all.</p>
+				<div class="content-controls">
+					<i class="icon-right-circled"></i>
+				</div>
 			</div>
 		</div>
 		<div id="design">
