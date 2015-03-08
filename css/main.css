@@ -1,5 +1,5 @@
 /**
- *Main styles for Vcweb redesign
+ *Main styles for Navy html theme
  *@rdarling
  *
  */
@@ -78,26 +78,26 @@ main h2 {
   margin-bottom: 2rem; }
 main .row {
   padding: 8rem; }
-main #design {
+main #ex2 {
   background: url(../img/design.jpg) no-repeat fixed;
   background-size: cover; }
-  main #design .row {
+  main #ex2 .row {
     background: rgba(255, 255, 255, 0.5);
     color: #f4f4f4; }
-    main #design .row h2 {
+    main #ex2 .row h2 {
       color: #f4f4f4; }
-main #video {
+main #ex3 {
   background: url(../img/giphy.gif) no-repeat fixed;
   background-size: cover; }
-  main #video .row {
+  main #ex3 .row {
     background: rgba(0, 0, 0, 0.8);
     color: #f4f4f4; }
-  main #video h2 {
+  main #ex3 h2 {
     color: #f4f4f4; }
-main #marketing {
+main #ex4 {
   background: #1D276E;
   color: #f4f4f4; }
-  main #marketing h2 {
+  main #ex4 h2 {
     color: #f4f4f4; }
 
 #footer_info {
